@@ -1,6 +1,6 @@
 export async function getAllDoctors() {
   try {
-    const res = await fetch(`${process.env.BASE_URL}/doctors`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/doctors`, {
       cache: "no-store",
     });
 
@@ -17,7 +17,7 @@ export async function getAllDoctors() {
 
 export async function getDoctorById(id: string) {
   try {
-    const res = await fetch(`${process.env.BASE_URL}/doctors/${id}`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/doctors/${id}`, {
       cache: "no-store",
     });
 
