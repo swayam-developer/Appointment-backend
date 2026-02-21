@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "json-server --watch db.json --port 10000 --host 0.0.0.0",
+    "start": "json-server --watch db.json  $PORT --host 0.0.0.0",
     "lint": "eslint"
   },
   "dependencies": {
