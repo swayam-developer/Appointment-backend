@@ -13,3 +13,13 @@ export default function RootLayout({
     </html>
   );
 }
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Schedula",
+  description: "Doctor Appointment Booking Application",
+  icons: {
+    icon: "/main.png",
+  },
+};
