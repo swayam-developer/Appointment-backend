@@ -2,12 +2,14 @@
 
 import { createContext, useContext, useEffect, useState } from "react";
 
-interface Appointment {
+export interface Appointment {
   id: number;
   doctorId: number;
   patientName: string;
-  age: string;
-  problem: string;
+  phone: string;
+  age?: number;
+  gender?: string;
+  problem?: string;
   date: string;
   time: string;
   status: string;
